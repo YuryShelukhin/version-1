@@ -126,47 +126,52 @@
 
 <img src = "img/8-9.png" width = 60%>
 
-1.  Выполним команды `git diff` и `git diff --staged`.
+10.  Выполним команды `git diff` и `git diff --staged`.
 
 <img src = "img/10-1.png" width = 60%>
 <img src = "img/10-2.png" width = 60%>
 
-1.   Сделаем первый коммит `git commit -m 'master 1 First commit'`.  
+11-12. Переведем файл в состояние `staged` командой `git add README.md` и ещё раз выполните команды `git diff` и `git diff --staged`. Поиграйте с изменениями и этими командами, чтобы чётко понять, что и когда они отображают.
+
+<img src = "img/11-12.png" width = 60%>
+
+13. Сделаем первый коммит `git commit -m 'master 1 First commit'`.  
 
 <img src = "img/13.png" width = 60%>  
 
-14.  Посмотрим выводы команд `git status`, `git diff` и `git diff --staged`.
+14.   Посмотрим выводы команд `git status`, `git diff` и `git diff --staged`.
 
 <img src = "img/14.png" width = 60%> 
 
-15. Создадим файл `.gitignore`, добавим его в следующий коммит. 
+15-16. Создадим файл `.gitignore`, добавим его в следующий коммит. 
 
 <img src = "img/15.png" width = 60%> 
 
-16. Cоздадим соотвествующий каталог terraform и внутри этого каталога — файл `.gitignore` по примеру: https://github.com/github/gitignore/blob/master/Terraform.gitignore.  
+17. Cоздадим соотвествующий каталог terraform и внутри этого каталога — файл `.gitignore` по примеру: https://github.com/github/gitignore/blob/master/Terraform.gitignore.  
  
 <img src = "img/16.png" width = 60%> 
 
-17.  В будущем благодаря добавленному .gitignore будут проигнорированы файлы, находящиеся в директории terraform, указанные в этом файле. 
-18.  Закоммитим все новые и изменённые файлы с комментарием к коммиту `Added gitignore`.
+18.  В будущем благодаря добавленному .gitignore будут проигнорированы файлы, находящиеся в директории terraform, указанные в этом файле. 
+19.  Закоммитим все новые и изменённые файлы с комментарием к коммиту `Added gitignore`.
 
 <img src = "img/18.png" width = 60%>   
 
-*Выявил,  что я не вижу "initial commit" по команде git log --oneline. Проблема в том, что не  был настроен remote origin. После git clone обычно автоматически добавляется remote с именем origin, однако в моем случае этого не произошло. Решение проблемы:  
-`git remote add origin https://github.com/YuryShelukhin/version-1  
-git fetch origin  
-git push --set-upstream origin master`  
+20. Создадим файлы `will_be_deleted.txt` (с текстом `will_be_deleted`) и `will_be_moved.txt` (с текстом `will_be_moved`) и закоммите их с комментарием `Prepare to delete and move`.  
 
-19. Создадим файлы `will_be_deleted.txt` (с текстом `will_be_deleted`) и `will_be_moved.txt` (с текстом `will_be_moved`) и закоммите их с комментарием `Prepare to delete and move`.  
+<img src = "img/20.png" width = 60%>
 
-<img src = "img/19.png" width = 60%>
-
-20. Удалите файл `will_be_deleted.txt` с диска и из репозитория. 
-23. Переименуйте (переместите) файл `will_be_moved.txt` на диске и в репозитории, чтобы он стал называться `has_been_moved.txt`.
-24. Закоммитьте результат работы с комментарием `Moved and deleted`.
+21. Удалим файл `will_be_deleted.txt` с диска и из репозитория, переименуем файл `will_be_moved.txt`, чтобы он стал называться `has_been_moved.txt`.
+22. Закоммитьте результат работы с комментарием `Moved and deleted`.
 
 
+<img src = "img/22.png" width = 60%>
 
-1-3. Cоздадим репозиторий в зарегистрированном аккаунте с файлом README.md
+23. Проверяем изменения.
+
+<img src = "img/23.png" width = 60%>  
+
+24. Отправим изменения репозиторий
+
+<img src = "img/24.png" width = 60%>  
 
 
