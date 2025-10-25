@@ -1,0 +1,9 @@
+!.gitkeep
+*.tfvars
+*.tfvars.json
+*.tfstate
+*.tfstate.*
+.terraform/
+terraform.tfstate.lock.info
+.terraformrc
+EOF
