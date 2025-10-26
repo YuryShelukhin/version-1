@@ -182,4 +182,6 @@
 
 <img src = "img/24.png" width = 60%>    
 
+* Добавим репозиторий gitlab
+  
 
