@@ -169,6 +169,7 @@
 
 21. Удалим файл `will_be_deleted.txt` с диска и из репозитория, переименуем файл `will_be_moved.txt`, чтобы он стал называться `has_been_moved.txt`.
 `git rm will_be_deleted.txt`
+`git mv will_be_moved.txt has_been_moved.txt`  
 22. Закоммитим результат работы с комментарием `Moved and deleted`.  
 
 <img src = "img/22.png" width = 60%>  
